@@ -68,12 +68,12 @@ class Level:
                             if isinstance(ent, Player) and ent.name == "Player1":
                                 player_score[0] = ent.score
                             if isinstance(ent, Player) and ent.name == "Player2":
-                                player_score[0] = ent.score
+                                player_score[1] = ent.score
                         return True
 
                 found_player = False
-                for ent in self.entity.list:
-                    if isinstance(ent. Player):
+                for ent in self.entity_list:
+                    if isinstance(ent, Player):
                         found_player = True
 
                 if not found_player:
