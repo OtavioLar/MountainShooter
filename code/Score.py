@@ -5,7 +5,7 @@ import pygame
 from pygame import Surface, Rect, KEYDOWN, K_RETURN, K_BACKSPACE, K_ESCAPE
 from pygame.font import Font
 
-from code.Const import C_YELLOW, SCORE_POS, MENU_OPTION, C_WHITE
+from code.Const import C_YELLOW, SCORE_POS, MENU_OPTION, C_WHITE, C_GREEN
 from code.DBProxy import DBProxy
 
 
@@ -53,7 +53,7 @@ class Score:
                     else:
                         if len(name) < 4:
                             name += event.unicode
-            self.score_text(20, name, C_WHITE, SCORE_POS['Name'])
+            self.score_text(20, name, C_GREEN, SCORE_POS['Name'])
             pygame.display.flip()
             pass
 
